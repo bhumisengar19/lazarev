@@ -13,7 +13,9 @@ body{
 
 nav{
     position: fixed;
-    /* background-color: rgb(0, 255, 110); */
+    background: rgba(17, 17, 17, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     display: flex;
     align-items: flex-start;
     width: 100%;
@@ -22,6 +24,7 @@ nav{
     height: 12vh;
     z-index: 10;
 }
+
 .nav-part1{
     font-size: 1.6vw;
 }
@@ -186,5 +189,56 @@ nav button svg{
 #page2{
     height: 100vh;
     width: 100%;
-    background-color: #111111;
+    background-color: #111;
+    position: relative;
+    padding: 0vw 10.5vw;
+    padding-bottom: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #333;
+}
+#page2-left{
+    height: 100%;
+    width: 40%;
+    /* background-color: rgb(75, 73, 70); */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3vw 0;
+}
+#page2-left p{
+    font-size: 1vw;
+
+}
+#page2-left h5{
+    font-size: 1.1vw;
+    width: 75%;
+    font-weight: 400; 
+}
+#page2-right{
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(75, 73, 70); */
+}
+.right-elem{
+    position: relative;
+    /* background-color: red; */
+    padding-top: 2vw;
+    padding-bottom: 5vw;
+    border-bottom: 1px solid #333;
+}
+.right-elem h2{
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+.right-elem img{
+    height: 7vw;
+    width: 7vw;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    scale: 0;
 }
