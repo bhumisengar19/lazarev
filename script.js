@@ -62,3 +62,24 @@ rightElems.forEach(function(elem){
 })  
 }
 page2Animation();
+function page3videoAnimation(){
+    var page3centre = document.querySelector(".page3-centre")
+var video = document.querySelector("#page3 video")
+page3centre.addEventListener("click", function(){
+    video.play()
+    gsap.to(video,{
+        transform:"scaleX(1) scaleY(1)",
+        opacity: 1,
+        borderRadius: 0,
+    })
+})
+video.addEventListener("click", function(){
+    video.pause()
+    gsap.to(video,{
+        transform:"scaleX(0.7) scaleY(0)",
+        opacity: 0,
+        borderRadius: "30px",
+    })
+})
+}
+page3videoAnimation();
