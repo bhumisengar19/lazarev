@@ -83,3 +83,22 @@ video.addEventListener("click", function(){
 })
 }
 page3videoAnimation();
+const sections = document.querySelectorAll(".sec-right");
+
+sections.forEach((sec) => {
+  const video = sec.querySelector("video");
+  const img = sec.querySelector("img");
+
+  sec.addEventListener("mouseenter", () => {
+    img.style.opacity = "0";
+    video.style.opacity = "1";
+    video.currentTime = 0;
+    video.play();
+  });
+
+  sec.addEventListener("mouseleave", () => {
+    video.pause();
+    video.style.opacity = "0";
+    img.style.opacity = "1";
+  });
+});
