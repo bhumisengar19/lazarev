@@ -299,3 +299,59 @@ nav button svg{
     opacity: 0;
     z-index: 99999;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page 4 main container */
+#page4 {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    padding: 3vw 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left section */
+#page4-left {
+    width: 40%;
+}
+
+#page4-left h3 {
+    font-size: 3vw;
+    font-weight: 700;
+    line-height: 3.2vw;
+    color: #000;
+}
+
+/* Right section */
+#page4-right {
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Headings */
+#page4-right h5 {
+    font-size: 1.1vw;
+    margin-bottom: 1.6vw;
+    text-transform: uppercase;
+    opacity: 0.5;
+    color: #000;
+    letter-spacing: -1px;
+}
+
+/* Paragraphs */
+#page4-right p {
+    font-size: 1.6vw;
+    font-weight: 600;
+    color: #4f4f4f;
+    letter-spacing: -1px;
+    margin-bottom: 4vw;
+}
